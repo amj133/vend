@@ -7,6 +7,6 @@ describe Snack, type: :model do
   end
 
   describe "relationships" do
-    xit { should have_many(:machines) }
+    it { is_expected.to have_many(:machines).through(:snack_machines) }
   end
 end
